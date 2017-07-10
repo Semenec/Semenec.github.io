@@ -1,0 +1,224 @@
+@import "bourbon"
+
+body
+	margin: 0
+	padding: 0
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+//Custom Styles Here
+.header
+	width: 100%
+	background-image: url("../img/header_img.jpg")
+	background-repeat: no-repeat
+	min-height: 600px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	padding-bottom: 80px
+	.header_top
+		opacity: 0.9;
+		background-color: white;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		padding: 10px 0
+		.header_menu
+			.header__menu_list
+				display: flex
+				flex-wrap: wrap
+				.header__menu_item
+					list-style-type: none
+					margin: 0 20px
+					a
+						opacity(0.75)
+						color: #454545
+						font-family: "Segoe UI"
+						font-size: 17px
+						font-weight: 400
+						text-decoration: none
+						transition: ease 2s all
+						&:hover
+							color: #de6d6e
+				.btn_login
+					background-color: #de6d6e;
+					border-radius: 3px;
+					padding: 5px 10px
+					color: #fff
+					transition: ease 0.5s all
+					a
+						line-height: 0
+						color: #fff
+					&:hover
+						color: #de6d6e
+						background-color: #FFF
+					i
+						font-size: 15px
+						line-height: 0
+	.header_main_container
+		width: 100%	
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		align-items: center
+		height: 100%
+		.header_main_title
+			text-shadow: 0 0 13px rgba(0, 0, 0, 0.22)
+			color: white
+			font-family: "Alte Haas Grotesk"
+			font-size: 69px
+			font-weight: 700
+			text-transform: uppercase
+		.header_main_discr
+			text-shadow: 0 0 13px rgba(0, 0, 0, 0.22)
+			color: white
+			font-family: "Univers LT 45 Light"
+			font-size: 25px
+			font-weight: 400
+.s_descr
+	text-align: center  
+	padding: 50px 0
+	.s_desrct__title
+		color: #404040
+		font-family: "Univers LT 45 Light"
+		font-size: 35px
+		font-weight: 400
+	p
+		max-width: 800px
+		margin: 0 auto
+		color: #636363
+		font-family: "Univers LT 45 Light"
+		font-size: 17px
+		font-weight: 400
+	.s_descr__container
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		align-content: flex-wrap
+		align-items: center
+		margin-top: 80px
+		.s_descr__icon_wrap
+			background-color: red
+			border-radius: 50%
+			padding: 50px
+			color: #fff
+			margin: 10px 0
+			i
+				font-size: 80px
+				margin: 0
+			&:nth-child(1)
+				background-color: #4eb9f4
+			&:nth-child(2)
+				background-color: #6fc125
+				padding-right: 60px
+			&:nth-child(3)
+				background-color: #ff5649
+			&:nth-child(4)
+				background-color: #e48f23
+.line
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+	background-color: rgba(0, 0, 0, 0.11)
+	width: 100%
+	height: 2px
+.article_container
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	.article_wrap
+		display: flex
+		justify-content: center
+		margin: 40px 0
+		flex-wrap: wrap
+		h4
+			color: #404040
+			font-family: "Univers LT 45 Light"
+			font-size: 27px
+			font-weight: 400
+			line-height: 22px
+		p
+			color: #8b8b8b
+			font-family: "Univers LT 45 Light"
+			font-size: 15px
+			font-weight: 400
+			line-height: 22px
+		img
+			flex-basis: 15%
+		.wrap
+			flex-basis: 67%
+			margin-left: 3%
+
+footer
+	display: flex
+	flex-basis: 70%
+	justify-content: space-around
+	background-color: #27262a
+	flex-wrap: wrap
+	.footer_column
+		display: flex
+		flex-direction: column
+		h5
+			color: #aeaeae
+			font-family: "Univers LT 45 Light"
+			font-size: 21px
+			font-weight: 400
+			line-height: 22px
+		a
+			color: #8b8b8b
+			font-family: "Univers LT 45 Light"
+			font-size: 15px
+			font-weight: 400
+			line-height: 22px
+			text-decoration: none
+			transition: ease 2s all
+			&:hover
+				color: #de6d6e
+	.footer_copyright
+		flex-basis: 30%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		.footer_icon
+			display: flex
+			font-size: 28px
+			color: #27262a
+			justify-content: space-around
+			.footer_icon_link
+				background-color: #696b6a
+				border-radius: 50%
+				padding: 8px
+				transition: ease 2s all
+				&:hover
+					background-color: #de6d6e
+		.footer_copyright_text
+			color: #8b8b8b
+			font-family: "Univers LT 45 Light"
+			font-size: 15px
+			font-weight: 400
+			line-height: 22px
+			margin: 0 auto
+			margin-top: 10px
+//ALWAYS END
+@import "media"
